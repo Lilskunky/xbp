@@ -1,0 +1,20 @@
+name="jiang"
+waist=90
+age=20
+height=172
+print(name, "さんは腹囲", waist, "cmで年齢は",age, "才,身長は",height,"ですね。")
+
+if waist>=85:
+    print("デブ、さっさとジムに行け")
+else:
+    print(name,"さん、調子乗んないでね。")
+
+if height<180:
+    print(name,"さん、生まれ変わったほうがいいよ")
+
+else:
+    print(name,"高い")
+
+if height<180 and waist>85:
+    print("生きる意味ありますか？")
+    
