@@ -1,65 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Black & White Theme</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            padding: 8px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        section {
-            padding: 20px;
-            margin: 5px;
-            border: 1px solid #ccc;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
 <body>
-    <header>
-        <h1>Welcome to ジャンのWebsite</h1>
-    </header>
-    <nav>
-        <a href="./FIRST copy.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    <section>
-        <h2>Essence of Challenge</h2>
-        <p>3dプリンターを活用して、靴などの生活用品を3dプリンターしたい</p>
-        <a href="./FIRST copy 2.html">1st</a>
+
+  <header class="hero">
+    <h1>Welcome to ジャンのWebsite</h1>
+    <p>日常の小さな挑戦から、未来が生まれる。</p >
+  </header>
+
+  <nav class="navbar">
+    About
+    Essence
+    Umbrella Project
+    Contact
+  </nav>
+
+  <main class="container">
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>このサイトでは、ジャンの作品やプロジェクト、日々の挑戦を紹介します。</p >
     </section>
-    <footer>
-        
-    </footer>
+
+    <section id="challenge" class="card">
+      <h2>Essence of Challenge</h2>
+      <p>3Dプリンターを活用して、生活の中の些細な不便を解決する道具を制作しています。最近では、履き心地とファッション性を両立したオリジナルシューズの制作にも取り組んでいます。</p >
+    </section>
+
+    <section id="umbrella" class="card" style="background:#f8f9fa;">
+      <h2>モバイルシェアかさの計画</h2>
+      <p>
+        登山カラビナ式の傘柄で、都市のどこでも“カチッ”と返却可能。<br>
+        スマホで傘を検索・解錠し、使用後は街の手すりやポールに直接ロック。<br>
+        駅に縛られない、もっと自由な傘シェアリングを実現します。
+      </p >
+      < img src="carabiner_umbrella_mockup.png" alt="傘のイメージ" style="max-width:100%; border-radius:8px; margin-top:20px;">
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>ご連絡は  まで。</p >
+    </section>
+
+  </main>
+
 </body>
-</html>
