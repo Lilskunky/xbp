@@ -88,8 +88,34 @@
       <li>● ワンタッチボタンによるロック操作</li>
     </ul>
 
-    <h2>コンセプトビジュアル</h2>
-    <img src="umbrella-concept.png" alt="シェア傘のコンセプト画像">
+    <!-- 引入 3D 预览器 -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<!-- 3D 模型展示区 -->
+<model-viewer src="./models/sansansan.glb"
+              alt="シェア傘のハンドル3Dモデル"
+              camera-controls
+              auto-rotate
+              background-color="#f5f5f5"
+              style="width: 100%; height: 500px;">
+</model-viewer>
+<!-- 模型介绍文字 -->
+<div style="margin-top: 20px; font-size: 16px; color: #444; line-height: 1.8;">
+  <h3>モバイルシェアかさのハンドル構造</h3>
+  <p>
+    この3Dモデルは、登山カラビナ型のモバイルシェア傘用ハンドルの試作構造です。<br>
+    本体は上・下の二重構造で構成され、内部には電動ロック機構を備えています。<br>
+    ガイドレールによってロックピン（ロック舌）が直線的にスライドし、端部のフック扉と嵌合することで、街中の手すりやポールに直接「カチッ」と固定可能です。<br>
+    さらに、上部には電子部品と電池スペースを内蔵し、Bluetooth接続による解錠操作やソーラー充電にも対応予定です。<br>
+    実際の構造設計・機構検証を通して、屋外使用時の防水性やユーザビリティにも配慮しています。
+  </p>
+</div>
+
+<!-- 下载按钮 -->
+<p>
+  <a href="./models/sansansan.stl" download>STLファイルをダウンロード</a>
+</p>
+
 
     <a class="back-link" href="FIRST%20copy.html">← ホームページに戻る</a>
   </div>
