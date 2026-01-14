@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JEANOME – 衣服の遺伝子プロジェクト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 以前と同じ “hero + navbar + card” 構成に戻しています -->
+  <header class="hero">
+    <h1>JEANOME</h1>
+    <p>Project Gene for Clothing</p>
+    <p>衣服の履歴を「遺伝情報」として残す、循環型ファッションの提案。</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#about">概要</a>
+    <a href="#gallery">ギャラリー</a>
+    <a href="#nfc">NFC Website</a>
+    <a href="#impressions">感想</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- 概要（文章内容は変えていません） -->
+    <section id="about" class="card">
+      <h2>プロジェクト概要</h2>
+      <p>
+        JEANOME（ジーノーム）は、不要になった衣服に新しい命を吹き込むことを目指す学生プロジェクトです。
+        捨てられるところだった古着を素材に、デザインを工夫して縫い直すことで、別の魅力ある一着へと生まれ変わらせることに挑戦しています。
+      </p>
+      <p>
+        プロジェクト名の「JEANOME」は「jeans」と「genome」を組み合わせて生まれた造語で、
+        古着に新しいDNAを与えるという発想を表しています。
+        また、本プロジェクトは持続可能なファッションやサーキュラーエコノミー（循環型経済）への関心から生まれた企画でもあります。
+        私は特に、地域で衣服を循環させ、新たな価値を生み出す「Community Loops（コミュニティ・ループス）」の理念に強く共感しており、
+        その考え方をこのプロジェクトにも取り入れました。
+      </p>
+    </section>
+
+    <!-- ギャラリー（横並び・写真枠だけ用意、後で差し替え） -->
+    <section id="gallery" class="card" style="background:#f8f9fa;">
+      <h2>ギャラリー</h2>
+      <p>
+        ここに、再構築した服（成品）と制作プロセスの写真を掲載します。<br>
+        ※ 現在は枠のみ配置しています。あとで画像パスを差し替えてください。
+      </p>
+
+      <div style="width:420px;">
+        <img 
+          src="./images/product3.jpg" 
+          alt="成品"
+          style="width:420px; height:280px; object-fit:cover; border-radius:12px; border:1px solid #ddd;"
+        >
+        <p style="font-size:13px; color:#666; margin:8px 0 0;">成品（完成した服）</p>
+      </div>
+      
+      <div style="width:420px;">
+        <img 
+          src="./images/product2.jpg" 
+          alt="成品ディテール"
+          style="width:420px; height:280px; object-fit:cover; border-radius:12px; border:1px solid #ddd;"
+        >
+        <p style="font-size:13px; color:#666; margin:8px 0 0;">成品（ディテール）</p>
+      </div>
+      
+      <div style="width:420px;">
+        <img 
+          src="./images/product1.jpg" 
+          alt="制作過程"
+          style="width:420px; height:280px; object-fit:cover; border-radius:12px; border:1px solid #ddd;"
+        >
+        <p style="font-size:13px; color:#666; margin:8px 0 0;">制作プロセス（裁断・縫製）</p>
+      </div>
+      
+      
+        <!-- 追加したい場合：このブロックをコピーして増やせます -->
+        <!--
+        <div style="width:320px;">
+          <div style="width:320px; height:220px; background:#e9ecef; border-radius:10px; border:1px solid #ddd; display:flex; align-items:center; justify-content:center; color:#666;">
+            Photo 4
+          </div>
+          <p style="font-size:13px; color:#666; margin:8px 0 0;">キャプション</p>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- NFCサイト（リンクの可視化 + 埋め込み） -->
+    <section id="nfc" class="card">
+      <h2>NFC Scan Website</h2>
+      <p>
+        完成した衣服に付与されたNFCタグをスマートフォンで読み取ると、専用Webサイト（JEANOME）へ遷移します。<br>
+        衣服の来歴や構成情報（Genealogy）を確認できます。
+      </p>
+
+      <!-- “可視化カード” -->
+      <div style="border:1px solid #ddd; border-radius:10px; padding:18px; margin-top:14px; background:#fafafa;">
+        <h3 style="margin:0 0 8px;">JEANOME｜NFC公式サイト</h3>
+        <p style="font-size:14px; color:#555; margin:0 0 12px;">
+          NFCスキャン後に表示されるページ（Genealogy / Memory / Story など）を確認できます。
+        </p>
+        <a href="https://hikaru-01817.github.io/Project_gene_for_clothing/" target="_blank"
+           style="display:inline-block; padding:10px 14px; background:#222; color:#fff; text-decoration:none; border-radius:8px;">
+          ▶ 公式サイトを開く
+        </a>
+      </div>
+
+      <!-- 埋め込み（iframe） -->
+      <p style="margin-top:16px; font-size:13px; color:#666;">
+        ▼ ページをこのまま埋め込み表示（環境によっては表示できない場合があります。その場合は上のボタンから開いてください）
+      </p>
+      <div style="margin-top:10px; border:1px solid #ddd; border-radius:10px; overflow:hidden;">
+        <iframe
+          src="https://hikaru-01817.github.io/Project_gene_for_clothing/"
+          title="JEANOME NFC Website"
+          style="width:100%; height:620px; border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- 感想（文章内容は変えていません） -->
+    <section id="impressions" class="card">
+      <h2>感想</h2>
+      <p>
+        このプロジェクトを通して、廃棄されるはずだった衣服にもまだ多くの可能性があることに気付きました。
+        デザインを考え直し、一から縫い直す作業は決して簡単ではありませんでしたが、
+        だからこそ一着の服に込められた価値を改めて実感しています。
+      </p>
+      <p>
+        プロジェクトを終えたいま、普段何気なく新しい服を手に取っていた自分の消費行動について考え方が少し変わりました。
+        一つひとつの衣服をより大切に扱い、長く活かす方法をこれからも意識していきたいと思います。
+      </p>
+    </section>
+
+    <!-- Contact（必要なら） -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>ご連絡は <a href="mailto:jmy20020429@gmail.com">jmy20020429@gmail.com</a> まで。</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
